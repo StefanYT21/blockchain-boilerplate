@@ -39,7 +39,7 @@ class Block
         let {difficulty} = lastBlock;
         let nonce = 0;
 
-        do {
+        do {    
             nonce++;
             timestamp = Date.now();
             difficulty = Block.adjustDifficulty(lastBlock, timestamp);

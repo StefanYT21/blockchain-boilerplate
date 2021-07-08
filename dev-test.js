@@ -1,4 +1,7 @@
-const Block = require('./blockchain/block');
+const Blockchain = require('./blockchain');
+const bc = new Blockchain();
 
-const block = Block.mineBlock(Block.genesis(), 'roataDeCarusel');
-console.log(block.toString());
+for(let i=0;i<=10;i++)
+{
+    console.log(bc.addBlock(`data ${i}`).toString()); 
+}
